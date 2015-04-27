@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/03/2015, 02:41:13 PM
+    Author     : cnieto
+*/
+
+label {
+    color: #B4886B;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    float: left;
+}
+
+label:after { content: ": " }
+
+
+/***FIRST STYLE THE BUTTON***/
+input[type=submit] {
+    border:2px groove #7c93ba;
+    cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding: 5px 25px;
+    /*give the background a gradient - see cssdemos.tupence.co.uk/gradients.htm for more info*/
+    background-color:#FF3333; /*required for browsers that don't support gradients*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF3333), to(#FF6262));
+    background: -webkit-linear-gradient(top, #FF3333, #FF6262);
+    background: -moz-linear-gradient(top, #FF3333, #FF6262);
+    background: -o-linear-gradient(top, #FF3333, #FF6262);
+    background: linear-gradient(top, #FF3333, #FF6262);
+    /*style to the text inside the button*/
+    font-family:Andika, Arial, sans-serif; /*Andkia is available at http://www.google.com/webfonts/specimen/Andika*/
+    color:#fff;
+    font-size:1.1em;
+    letter-spacing:.1em;
+    font-variant:small-caps;
+    /*give the corners a small curve*/
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
+    /*add a drop shadow to the button*/
+    -webkit-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+    -moz-box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+    box-shadow: rgba(0, 0, 0, .75) 0 2px 6px;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input[type=submit]:hover, input[type=submit]:focus {
+    color:#edebda;
+    /*reduce the spread of the shadow to give a pushed effect*/
+    -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+    box-shadow: rgba(0, 0, 0, .25) 0 1px 0px;
+}
+
+/* JS disabled styles */
+.no-js nav li:hover ul { display:block; }
+
+/* base nav styles */
+nav { display:block; margin:0 auto 20px; border:1px solid #222; position:relative; background-color:#6a6a6a; font:16px Tahoma, Sans-serif; }
+nav ul { padding:0; margin:0; }
+nav li { position:relative; float:left; list-style-type:none; }
+nav ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+nav li a { display:block; padding:10px 20px; border-left:1px solid #999; border-right:1px solid #222; color:#eee; text-decoration:none; }
+nav li a:focus { outline:none; text-decoration:underline; }
+nav li:first-child a { border-left:none; }
+nav li.last a { border-right:none; }
+nav a span { display:block; float:right; margin-left:5px; }
+nav ul ul { display:none; width:100%; position:absolute; left:0; background:#6a6a6a; }
+nav ul ul li { float:none; }
+nav ul ul a { padding:5px 10px; border-left:none; border-right:none; font-size:14px; }
+nav ul ul a:hover { background-color:#555; }
+
+
+
+
+
